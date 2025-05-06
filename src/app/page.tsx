@@ -1,13 +1,8 @@
 import Image from 'next/image';
-import NavBar from './presentation/components/organism/nav-bar/NavBar';
-import { navItems } from '@/data/navItems';
 
 export default function Home() {
   return (
     <div className="min-w-screen-full flex flex-col font-[family-name:var(--font-geist-sans)]">
-      <nav className="w-full bg-neutral-100 text-black">
-        <NavBar items={navItems} />
-      </nav>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
