@@ -1,4 +1,5 @@
 import Label from '@/components/atoms/label/Label';
+import Tag from '@/components/atoms/tags/Tag';
 import testingImage from '@/utils/images/profile.png';
 import { FC } from 'react';
 
@@ -23,7 +24,11 @@ const BlogCard: FC<BlogCardProps> = ({
         <img src={testingImage.src} />
       </div>
       <div className="flex flex-col">
-        <Label className="mt-3.5 mb-4" text="Sunday, 1 Jan 2023" />
+        <Label
+          className="mt-3.5 mb-4"
+          color="dark:text-violet-500"
+          text="Sunday, 1 Jan 2023"
+        />
         <div className="flex flex-row space-x-3  hover:text-white ...">
           <span className="text-3xl mt-2.5 mb-2.5">UX review presentation</span>
           <div className="flex flex-col justify-center">
@@ -41,6 +46,8 @@ const BlogCard: FC<BlogCardProps> = ({
           How do you create compelling presentations that wow your colleagues
           and impress your managers?
         </p>
+
+        <Tag tagName="web" />
       </div>
     </div>
   );

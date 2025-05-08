@@ -19,7 +19,12 @@ const NavBar: FC<NavBarProps> = ({ items }) => {
 
   return (
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <Label size="lg" text="B-tech" className="font-bold" />
+      <Label
+        size="lg"
+        text="B-tech"
+        className="font-bold"
+        color="dark:text-white"
+      />
       <button
         onClick={() => setIsOpen(!isOpen)}
         type="button"
