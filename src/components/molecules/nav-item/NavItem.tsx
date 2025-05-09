@@ -12,7 +12,7 @@ const NavItem: FC<NavItemProps> = ({ href, icon, label, isActive }) => {
       } ${isActive ? 'bg-indigo-50' : 'text-gray-700'}`}
     >
       {icon && <Icon {...icon} />}
-      <Label {...label} />
+      <Label {...label} isActive={isActive} />
     </Link>
   );
 };
