@@ -1,21 +1,31 @@
 import { FC } from 'react';
 
-type TagProps = {
-  tagName?: 'web' | 'mobile' | 'backend'; // ->
-};
+export interface TagProps {
+  tagName?: 'web' | 'mobile' | 'backend';
+}
 
 const Tag: FC<TagProps> = ({ tagName }) => {
-  let backgroundColor =
+  const backgroundColor =
     tagName === 'web'
-      ? 'bg-gray-500'
+      ? 'bg-violet-100'
       : tagName === 'mobile'
-        ? 'bg-white'
+        ? 'bg-blue-100'
         : tagName === 'backend'
-          ? 'bg-violet-500'
+          ? 'bg-pink-100'
+          : 'bg-white';
+  const textColor =
+    tagName === 'web'
+      ? 'text-violet-500'
+      : tagName === 'mobile'
+        ? 'text-blue-500'
+        : tagName === 'backend'
+          ? 'text-pink-500'
           : 'bg-white';
   return (
-    <button className={`${tagName} bg-sky-500 hover:bg-sky-700 rounded-3xl`}>
-      Save changes
+    <button
+      className={` ${backgroundColor} ${textColor} hover:bg-sky-700 rounded-3xl h-7 w-20`}
+    >
+      {tagName}
     </button>
   );
 };

@@ -1,14 +1,14 @@
 import Label from '@/components/atoms/label/Label';
-import Tag from '@/components/atoms/tags/Tag';
+import Tag, { TagProps } from '@/components/atoms/tags/Tag';
 import testingImage from '@/utils/images/profile.png';
 import { FC } from 'react';
 
 type BlogCardProps = {
+  tags: TagProps[];
   image?: string;
   date?: string;
   title?: string;
   description?: string;
-  tags?: string; // Create Tag Atom
 };
 
 const BlogCard: FC<BlogCardProps> = ({
@@ -46,8 +46,9 @@ const BlogCard: FC<BlogCardProps> = ({
           How do you create compelling presentations that wow your colleagues
           and impress your managers?
         </p>
-
-        <Tag tagName="web" />
+        <div className="flex flex-row gap-2 mt-4">
+          {tags?.map((tag, index) => <Tag {...tag} key={index} />)}
+        </div>
       </div>
     </div>
   );
