@@ -1,6 +1,7 @@
 import Title from '@/components/atoms/title/Title';
 import BlogCard from './components/BlogCard';
 import { tagItems } from '@/data/tagItems';
+import { cardItems } from '@/data/cardItems';
 
 export default function About() {
   return (
@@ -16,7 +17,7 @@ export default function About() {
           fontSize="text-3xl"
           className="mb-5"
         />
-        <BlogCard tags={tagItems} />
+        <BlogCard cards={cardItems} />
       </div>
     </main>
   );
