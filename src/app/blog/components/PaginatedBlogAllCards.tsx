@@ -40,17 +40,17 @@ const PaginatedBlogGrid: FC<PaginatedBlogGridProps> = ({
           <button
             onClick={handlePrev}
             disabled={currentPage === 0}
-            className="px-4 py-2 bg-gray-100 text-gray-700 rounded hover:bg-gray-300 disabled:opacity-50"
+            className="px-4 py-2 bg-gray-100 text-gray-700 rounded hover:bg-gray-300 disabled:opacity-50 dark:text-gray-500"
           >
             Previous
           </button>
-          <span className="self-center text-gray-700 font-medium">
+          <span className="self-center text-gray-700 font-medium dark:text-gray-400">
             {currentPage + 1} de {totalPages}
           </span>
           <button
             onClick={handleNext}
             disabled={currentPage === totalPages - 1}
-            className="px-4 py-2 bg-gray-100 text-gray-700 rounded hover:bg-gray-300 disabled:opacity-50"
+            className="px-4 py-2 bg-gray-100 text-gray-700 rounded hover:bg-gray-300 disabled:opacity-50 dark:text-gray-500"
           >
             Next
           </button>

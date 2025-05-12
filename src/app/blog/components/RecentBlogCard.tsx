@@ -68,7 +68,7 @@ const RecentBlogCard: FC<Card> = ({ cards }) => {
                 className="mb-2 text-sm text-violet-500 md:text-2xl"
                 text={card.date}
               />
-              <div className="flex flex-row space-x-3 items-start hover:text-white">
+              <div className="flex flex-row space-x-3 items-start ">
                 <h3 className="text-3xl md:text-4xl font-semibold mb-2">
                   {card.title}
                 </h3>
