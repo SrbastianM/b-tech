@@ -1,6 +1,8 @@
 import Title from '@/components/atoms/title/Title';
-import BlogCard from './components/BlogCard';
+import RecentBlogCard from './components/RecentBlogCard';
 import { cardItems } from '@/data/cardItems';
+import BlogCard from './components/BlogCard';
+import PaginatedBlogGrid from './components/PaginatedBlogAllCards';
 
 export default function About() {
   return (
@@ -15,7 +17,14 @@ export default function About() {
           fontSize="text-3xl md:text-4xl md:mb-10 md:mt-10"
           className="mb-5"
         />
-        <BlogCard cards={cardItems} />
+        <RecentBlogCard cards={cardItems} />
+        <Title
+          text="All blog posts"
+          type="bold"
+          fontSize="mt-10 text-3xl md:text-4xl md:mb-10 md:mt-10"
+          className="mb-5"
+        />
+        <PaginatedBlogGrid cards={cardItems} />
       </div>
     </main>
   );
