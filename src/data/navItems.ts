@@ -1,42 +1,43 @@
 import { NavItemProps } from '@/components/molecules/nav-item/NavItemProps';
 
 const fontLight = 'light: text-black';
-const darkMode = 'dark:text-white'
+const darkMode = 'dark:text-white';
+const mediumRes = 'md:text-4xl'
 
 export const navItems: NavItemProps[] = [
   {
     label: {
       text: 'Home',
-      className: fontLight,
+      className: `${fontLight} ${mediumRes}`,
       size: 'sm',
-      color: darkMode
+      color: darkMode,
     },
     href: '/',
   },
   {
     label: {
       text: 'Blog',
-      className: fontLight,
+      className: `${fontLight} ${mediumRes}` ,
       size: 'sm',
-      color: darkMode
+      color: darkMode,
     },
     href: '/blog',
   },
   {
     label: {
       text: 'Work',
-      className: fontLight,
+      className: `${fontLight} ${mediumRes}`,
       size: 'sm',
-      color: darkMode
+      color: darkMode,
     },
     href: '/work',
   },
   {
     label: {
       text: 'Contact',
-      className: fontLight,
+      className: `${fontLight} ${mediumRes}`,
       size: 'sm',
-      color: darkMode
+      color: darkMode,
     },
     href: '/contact',
   },
