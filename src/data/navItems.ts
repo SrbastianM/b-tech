@@ -2,7 +2,7 @@ import { NavItemProps } from '@/components/molecules/nav-item/NavItemProps';
 
 const fontLight = 'light: text-black';
 const darkMode = 'dark:text-white';
-const mediumRes = 'md:text-4xl'
+const mediumRes = 'md:text-lg'
 
 export const navItems: NavItemProps[] = [
   {

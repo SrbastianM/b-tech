@@ -12,7 +12,7 @@ const Label: FC<LabelProps> = ({ text, className, color, size, isActive }) => {
           : '';
   return (
     <span
-      className={`${isActive ? 'text-black' : `${color}`}  ${fontSize} ${className}`}
+      className={`${isActive ? 'text-black' : `${color}`}  ${fontSize} ${className} lg:text-lg`}
     >
       {text}
     </span>

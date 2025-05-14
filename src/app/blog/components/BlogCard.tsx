@@ -23,8 +23,8 @@ const BlogCard: FC<RecentBlogCardProps> = ({
         alt={title}
       />
       <Label className="text-sm md:text-2xl text-violet-500" text={date} />
-      <h3 className="text-xl md:text-3xl font-bold">{title}</h3>
-      <p className="text-gray-600 dark:text-gray-400 text-base md:text-2xl">
+      <h3 className="text-xl md:text-3xl font-bold lg:text-2xl">{title}</h3>
+      <p className="text-gray-600 dark:text-gray-400 text-base md:text-2xl lg:text-lg">
         {description}
       </p>
       <div className="flex flex-wrap gap-2 mt-2">
