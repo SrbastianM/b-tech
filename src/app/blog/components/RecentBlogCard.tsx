@@ -1,5 +1,5 @@
-import Label from '@/components/atoms/label/Label';
-import Tag, { TagProps } from '@/components/atoms/tags/Tag';
+import Label from '@/utils/components/atoms/label/Label';
+import Tag, { TagProps } from '@/utils/components/atoms/tags/Tag';
 import { FC } from 'react';
 
 export interface RecentBlogCardProps {

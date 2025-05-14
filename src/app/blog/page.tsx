@@ -1,4 +1,4 @@
-import Title from '@/components/atoms/title/Title';
+import Title from '@/utils/components/atoms/title/Title';
 import RecentBlogCard from './components/RecentBlogCard';
 import { cardItems } from '@/data/cardItems';
 import BlogCard from './components/BlogCard';

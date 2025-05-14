@@ -22,7 +22,7 @@ const NavBar: FC<NavBarProps> = ({ items }) => {
       <Label
         size="lg"
         text="B-tech"
-        className="font-bold md:text-4xl"
+        className="font-bold md:text-4xl lg:text-4xl"
         color="dark:text-white"
       />
       <button

@@ -1,8 +1,8 @@
 'use-client';
 import { FC } from 'react';
 import { RecentBlogCardProps } from './RecentBlogCard';
-import Label from '@/components/atoms/label/Label';
-import Tag from '@/components/atoms/tags/Tag';
+import Label from '@/utils/components/atoms/label/Label';
+import Tag from '@/utils/components/atoms/tags/Tag';
 
 type PaginateBlogCards = {
   cards: RecentBlogCardProps;
