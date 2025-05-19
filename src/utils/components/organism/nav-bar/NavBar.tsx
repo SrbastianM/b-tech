@@ -9,13 +9,6 @@ import Label from '../../atoms/label/Label';
 const NavBar: FC<NavBarProps> = ({ items }) => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
-  const [hasMounted, setHasMounted] = useState(false);
-
-  useEffect(() => {
-    setHasMounted(true);
-  }, []);
-
-  if (!hasMounted) return null;
 
   return (
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
