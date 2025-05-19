@@ -29,7 +29,7 @@ export const cardItems: RecentBlogCardProps[] = [
     title: 'Building your API Stack',
     tags: [{ tagName: 'backend' }, { tagName: 'web' }, { tagName: 'mobile' }],
   },
-    {
+  {
     image: testingImage.src,
     date: today.toDateString(),
     description:
@@ -45,7 +45,7 @@ export const cardItems: RecentBlogCardProps[] = [
     title: 'Building your API Stack',
     tags: [{ tagName: 'backend' }, { tagName: 'web' }, { tagName: 'mobile' }],
   },
-    {
+  {
     image: testingImage.src,
     date: today.toDateString(),
     description:

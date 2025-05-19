@@ -23,7 +23,7 @@ const Tag: FC<TagProps> = ({ tagName }) => {
           : 'bg-white';
   return (
     <button
-      className={` ${backgroundColor} ${textColor} hover:bg-sky-700 rounded-3xl h-7 w-20 md:h-10 md:w-30 md:text-2xl`}
+      className={` ${backgroundColor} ${textColor} hover:bg-sky-700 rounded-3xl h-7 w-20 md:h-10 md:w-30 md:text-2xl lg:h-7 lg:w-20 lg:text-sm`}
     >
       {tagName}
     </button>

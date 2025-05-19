@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { NavItemProps } from './NavItemProps';
 import Link from 'next/link';
-import Icon from '../../atoms/icon/Icons';
-import Label from '../../atoms/label/Label';
+import Icon from '@/utils/components/atoms/icon/Icon';
+import Label from '@/utils/components/atoms/label/Label';
 
 const NavItem: FC<NavItemProps> = ({ href, icon, label, isActive }) => {
   return (
