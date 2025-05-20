@@ -1,5 +1,7 @@
+'use client';
 import Label from '@/utils/components/atoms/label/Label';
 import Tag, { TagProps } from '@/utils/components/atoms/tags/Tag';
+import { useRouter } from 'next/navigation';
 import { FC } from 'react';
 
 export interface RecentBlogCardProps {
@@ -8,6 +10,7 @@ export interface RecentBlogCardProps {
   date?: string;
   title?: string;
   description?: string;
+  slug?: string;
 }
 
 type Card = {
@@ -15,13 +18,21 @@ type Card = {
 };
 
 const RecentBlogCard: FC<Card> = ({ cards }) => {
+  const router = useRouter();
+  const handleClick = (e: any, path: string) => {
+    e.preventDefault();
+    router.push(path);
+  };
   const topThree = cards.slice(0, 3);
 
   return (
     <div className="flex flex-col gap-12 lg:grid lg:grid-cols-2">
       <div className="lg:col-span-2">
         {topThree[0] && (
-          <div className="flex flex-col gap-4">
+          <div
+            className="flex flex-col gap-4"
+            onClick={(e) => handleClick(e, `/blog/posts/${topThree[0].slug}`)}
+          >
             <img
               className="w-full h-64 md:h-80 object-cover rounded-md"
               src={topThree[0].image}
@@ -58,6 +69,7 @@ const RecentBlogCard: FC<Card> = ({ cards }) => {
           <div
             key={index}
             className="flex flex-col md:flex-row lg:flex-row gap-6"
+            onClick={() => {}}
           >
             <div className="md:w-1/2 lg:w-1/3">
               <img
