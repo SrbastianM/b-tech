@@ -6,6 +6,7 @@ let today = new Date(convertedDateTime);
 
 export const cardItems: RecentBlogCardProps[] = [
   {
+    slug: 'how-to-create-compelling-presentations',
     image: testingImage.src,
     date: today.toDateString(),
     description:

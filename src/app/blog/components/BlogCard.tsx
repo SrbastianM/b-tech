@@ -16,7 +16,12 @@ const BlogCard: FC<RecentBlogCardProps> = ({
   tags,
 }) => {
   return (
-    <div className="flex flex-col gap-4 ">
+    <div
+      className="flex flex-col gap-4 "
+      onClick={() => {
+        alert('hello');
+      }}
+    >
       <img
         className="w-full h-64 object-cover rounded-md"
         src={image}
