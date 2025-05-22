@@ -25,11 +25,11 @@ export const navItems: NavItemProps[] = [
   },
   {
     label: {
-      text: 'NewsLatter',
+      text: 'Login',
       className: `${fontLight} ${mediumRes}`,
       size: 'sm',
       color: darkMode,
     },
-    href: '/newsLatter',
+    href: '/login',
   },
 ];
