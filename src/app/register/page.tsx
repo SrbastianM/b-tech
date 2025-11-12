@@ -29,7 +29,7 @@ const LoginPage: FC = () => {
         return;
       }
 
-      router.push('/');
+      router.push('/login');
     } catch (e) {
       console.log(e);
       setError('Something went wrong, try again!');
