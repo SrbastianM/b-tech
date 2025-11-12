@@ -27,8 +27,12 @@ const LoginPage: FC = () => {
         setError(data.error || 'Login Failed');
         return;
       }
+      localStorage.setItem('token', data.token);
+      localStorage.setItem('user', JSON.stringify(data.user));
 
-      router.push('/');
+      window.dispatchEvent(new Event('authChange'));
+
+      router.push('/blog');
     } catch (e) {
       console.log(e);
       setError('Something went wrong, try again!');
