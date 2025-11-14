@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'B-tech',
+  title: 'MeMori',
   description: 'Blog created with NextJS',
 };
 
