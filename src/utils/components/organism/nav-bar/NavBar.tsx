@@ -78,7 +78,7 @@ const NavBar: FC<NavBarProps> = ({ items }) => {
     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <Label
         size="lg"
-        text="B-tech"
+        text="MeMori"
         className="font-bold md:text-4xl lg:text-4xl"
         color="dark:text-white"
       />
@@ -120,12 +120,12 @@ const NavBar: FC<NavBarProps> = ({ items }) => {
           {user && (
             <div className="relative ml-4">
               <button
-                onClick={() => setIsOpen((prev) => !prev)} // 👈 clic alterna el menú
+                onClick={() => setIsOpen((prev) => !prev)}
                 className="flex items-center space-x-2 text-gray-700 dark:text-gray-200 hover:text-gray-900 focus:outline-none"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-8 w-8"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -137,10 +137,8 @@ const NavBar: FC<NavBarProps> = ({ items }) => {
                     d="M5.121 17.804A9.969 9.969 0 0112 15c2.21 0 4.236.717 5.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span>{user.username}</span>
               </button>
 
-              {/* Dropdown con click */}
               {isOpen && (
                 <div className="absolute right-0 mt-2 w-40 bg-white border rounded-lg shadow-lg dark:bg-gray-800">
                   <button
